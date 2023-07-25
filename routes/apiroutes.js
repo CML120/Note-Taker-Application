@@ -26,4 +26,19 @@ apiRouter.get('/notes', function(req, res) {
     res.json(newNote);
   });
 
+  apiRouter.delete('/notes/:id', (req, res) => {
+    const noteId = req.params.id;
+    const notes = readNotesFromDb();
+
+    const noteIndex = notes.findIndex((note) => note.id === noteId);
+
+    if (noteIndex !== -1) {
+        notes.splice(noteIndex, 1);
+        writeNotesToDb(notes);
+        res.status(204).send(); // 
+    } else {
+        res.status(404).json({ error: 'Note does not exist' });
+    }
+});
+
 module.exports = apiRouter;
