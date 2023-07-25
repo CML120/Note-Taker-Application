@@ -2,17 +2,9 @@
   
   #  Express.js: Note Taker
 
-  ## Table of Contents
-  - [Description](#project-description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contribution](#contribution)
-  - [Testing](#testing)
-  - [Contact](#contact)
-
-
   ## Project Description
   This is a Note Taker application made using Express.js.  
+  Deployed on Heroku:  [CML Note Taker](https://cml-note-taker-af67859367a9.herokuapp.com/)
 
   ## User Story
 
@@ -46,25 +38,10 @@ THEN I am presented with empty fields to enter a new note title and the note’s
   
   [![Generic badge](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/.)
   
-   
-
   
-  ## Installation 
-  install instructions
-
-
-  ## Usage 
-  usage instructions
-
-
-  ## Contribution
-  contribution instructions
-
-
-  ## Testing
-  testing instructions
 
   
   ## Contact
   Please contact [CML120](https://github.com/CML120) at cheelor922@gmail.com with any questions.
 
+![Alt text](image.png)
