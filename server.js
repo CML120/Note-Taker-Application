@@ -5,19 +5,21 @@ const app = express();
 //sets port for use with listener
 const PORT = process.env.port || 3001;
 //routes
-const htmlRouter = require('./routes/index.js'); 
-
+const apiRouter = require('./routes');
+const htmlRouter = require('./routes'); 
+// const { apiRouter, htmlRouter } = require('./routes');
 
 
 // middleware for parsing JSON and url encoded data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//path to html notes page
-app.use('/', htmlRouter);
-
 //serving static files from public directory
 app.use(express.static('public'));
+
+//path to html notes page
+app.use('/', apiRouter);
+app.use('/', htmlRouter);
 
 //start the server and listen to the port
 app.listen(PORT, () =>
