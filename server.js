@@ -1,14 +1,15 @@
 //dependency: required npm package
 const express = require('express');
+
 //creating instance of express server
 const app = express();
+
 //sets port for use with listener
 const PORT = process.env.port || 3001;
+
 //routes
 const apiRouter = require('./routes');
 const htmlRouter = require('./routes'); 
-// const { apiRouter, htmlRouter } = require('./routes');
-
 
 // middleware for parsing JSON and url encoded data
 app.use(express.json());
