@@ -12,6 +12,7 @@ const dbFilePath = './db/db.json';
 
 
 //GET route. retrieve notes, returned as JSON
+
 apiRouter.get('/notes', function (req, res) {
   fs.readFile(dbFilePath, (err, data) => {
     if (err) throw err;
