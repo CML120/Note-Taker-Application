@@ -34,7 +34,6 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
   
   ### License 
-  MIT
   
   [![Generic badge](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/.)
   
