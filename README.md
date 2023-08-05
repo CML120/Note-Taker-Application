@@ -41,6 +41,6 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
   
   ## Contact
-  Please contact [CML120](https://github.com/CML120) at cheelor922@gmail.com with any questions.
+  Please contact [CML120](https://github.com/CML120) at cheelor922@gmail.com with any questions.  
 
 ![Alt text](image.png)
